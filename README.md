@@ -9,11 +9,11 @@ remix, perform, build on, and redistribute.
 
 | Domain | Codename | What it is |
 |---|---|---|
-| 🎵 Music | [Neon Echo](/Users/bassamfaraj/PhoneixHovaN-1/music/neon-echo) | Original synthwave/alt-pop song: full lyrics, chords, and production notes. |
-| 🎬 Film | [Copper Comet](/Users/bassamfaraj/PhoneixHovaN-1/film/copper-comet) | Original ~9-minute short-film screenplay. |
-| 🎨 Art | [Glass Horizon](/Users/bassamfaraj/PhoneixHovaN-1/art/glass-horizon) | Generative art piece (Python script rendering seeded SVG artworks). |
-| 💻 Tech | [Silent Static](/Users/bassamfaraj/PhoneixHovaN-1/tech/silent-static) | A working, tested CLI that generates randomized codenames + creative briefs across all five domains. |
-| 🏅 Sports | [Wild Marathon](/Users/bassamfaraj/PhoneixHovaN-1/sports/wild-marathon) | An original invented team sport with a full rulebook. |
+| 🎵 Music | [Neon Echo](music/neon-echo/) | Original synthwave/alt-pop song: full lyrics, chords, and production notes. |
+| 🎬 Film | [Copper Comet](film/copper-comet/) | Original ~9-minute short-film screenplay. |
+| 🎨 Art | [Glass Horizon](art/glass-horizon/) | Generative art piece (Python script rendering seeded SVG artworks). |
+| 💻 Tech | [Silent Static](tech/silent-static/) | A working, tested CLI that generates randomized codenames + creative briefs across all five domains. |
+| 🏅 Sports | [Wild Marathon](sports/wild-marathon/) | An original invented team sport with a full rulebook. |
 
 Each project folder has its own `README.md` with details, and its own
 primary content file (song, script, art generator, code, or rulebook).
@@ -21,7 +21,7 @@ primary content file (song, script, art generator, code, or rulebook).
 ## License
 
 This project is licensed under the MIT License. See
-[LICENSE](/Users/bassamfaraj/PhoneixHovaN-1/LICENSE). The MIT license covers
+[LICENSE](LICENSE). The MIT license covers
 **every** project in this repository — music, film, art, code, and sport
 rules alike.
 
@@ -29,7 +29,7 @@ rules alike.
 
 You may use, modify, perform, remix, and distribute anything in this
 repository under the terms of the MIT License. See
-[DISTRIBUTION.md](/Users/bassamfaraj/PhoneixHovaN-1/DISTRIBUTION.md) for
+[DISTRIBUTION.md](DISTRIBUTION.md) for
 domain-specific notes on how to credit and release each type of work.
 When redistributing, include the copyright and license notice from the
 license file.
