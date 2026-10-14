@@ -28,4 +28,4 @@ Best,
 
 ---
 
-**Attachment suggestion:** [song.md](/Users/bassamfaraj/PhoneixHovaN-1/music/neon-echo/song.md)
+**Attachment suggestion:** [song.md](../music/neon-echo/song.md)
