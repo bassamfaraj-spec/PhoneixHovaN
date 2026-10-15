@@ -1,77 +1,51 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "name": "Launch Integrated Browser",
-            "request": "launch",
-            "type": "editor-browser",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        },
-
-        {
-            "name": "Python Debugger: Current File with Arguments",
+            "name": "Silent Static: all domains",
             "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "args": "${command:pickArgs}"
+            "module": "silent_static.cli",
+            "cwd": "${workspaceFolder}/tech/silent-static",
+            "console": "integratedTerminal"
         },
         {
+            "name": "Silent Static: selected domain",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "silent_static.cli",
+            "cwd": "${workspaceFolder}/tech/silent-static",
             "args": [
-                "--extensionDevelopmentPath=${workspaceFolder}"
+                "${input:silentStaticDomain}"
             ],
-            "name": "Launch Extension",
-            "outFiles": [
-                "${workspaceFolder}/out/**/*.js"
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Silent Static: run tests",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "tests",
+                "-v"
             ],
-            "preLaunchTask": "npm",
-            "request": "launch",
-            "type": "extensionHost"
-        },
+            "cwd": "${workspaceFolder}/tech/silent-static",
+            "console": "integratedTerminal"
+        }
+    ],
+    "inputs": [
         {
-            "address": "TCP/IP address of process to be debugged",
-            "localRoot": "${workspaceFolder}",
-            "name": "Attach to Remote",
-            "port": 9229,
-            "remoteRoot": "Absolute path to the remote directory containing the program",
-            "request": "attach",
-            "skipFiles": [
-                "<node_internals>/**"
+            "id": "silentStaticDomain",
+            "type": "pickString",
+            "description": "Choose a creative domain",
+            "options": [
+                "music",
+                "film",
+                "art",
+                "tech",
+                "sports"
             ],
-            "type": "node"
-        },
-        {
-            "name": "Attach to Integrated Browser",
-            "request": "attach",
-            "type": "editor-browser",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "name": "Launch Integrated Browser",
-            "request": "launch",
-            "type": "editor-browser",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "command": "npm start",
-            "name": "Run npm start",
-            "request": "launch",
-            "type": "node-terminal"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${file}"
+            "default": "tech"
         }
     ]
 }
